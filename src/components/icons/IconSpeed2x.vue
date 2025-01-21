@@ -1,5 +1,22 @@
+<script setup lang="ts">
+withDefaults(
+  defineProps<{
+    size?: number
+  }>(),
+  {
+    size: 16,
+  },
+)
+</script>
+
 <template>
-  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg
+    :width="size"
+    :height="size"
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
     <path
       d="M3 12V7.36842H6.36842V4.84211H3V4H7.21053V8.21053H3.84211V11.1579H7.21053V12H3Z"
       fill="black"
