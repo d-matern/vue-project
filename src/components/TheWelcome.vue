@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import WelcomeItem from './WelcomeItem.vue'
+import WelcomeItem from './WelcomeItem.vue';
 
-const openReadmeInEditor = () => fetch('/__open-in-editor?file=README.md')
+const openReadmeInEditor = () => fetch('/__open-in-editor?file=README.md');
 </script>
 
 <template>

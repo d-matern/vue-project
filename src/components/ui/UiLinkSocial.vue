@@ -1,14 +1,14 @@
 <script setup lang="ts">
 withDefaults(
   defineProps<{
-    href: string
-    label?: string
-    variant?: 'desktop' | 'mobile'
+    href: string;
+    label?: string;
+    variant?: 'desktop' | 'mobile';
   }>(),
   {
     variant: 'desktop',
   },
-)
+);
 </script>
 
 <template>

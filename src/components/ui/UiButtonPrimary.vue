@@ -1,16 +1,16 @@
 <script setup lang="ts">
 withDefaults(
   defineProps<{
-    size?: 's' | 'm' | 'l'
-    variant?: 'primary' | 'invert' | 'attention'
-    isDisabled?: boolean
+    size?: 's' | 'm' | 'l';
+    variant?: 'primary' | 'invert' | 'attention';
+    isDisabled?: boolean;
   }>(),
   {
     size: 's',
     variant: 'primary',
     isDisabled: false,
   },
-)
+);
 </script>
 
 <template>
