@@ -1,0 +1,28 @@
+:root {
+  /* Color palette */
+  --white-color: #ffffff;
+
+  --primary-color: #6e80f8;
+  --primary-75-color: #92a0fa;
+  --primary-50-color: #b6bffb;
+  --primary-25-color: #dbdffd;
+  --primary-15-color: #e9ecfe;
+  --primary-5-color: #f8f9ff;
+
+  --neutral-color: #b6b6bc;
+  --neutral-75-color: #c8c9cd;
+  --neutral-50-color: #dadbdd;
+  --neutral-25-color: #ededee;
+  --neutral-15-color: #f4f4f5;
+  --neutral-5-color: #fbfbfc;
+
+  --error-color: #da4f46;
+  --error-75-color: #e47b74;
+  --error-50-color: #eca6a2;
+  --error-25-color: #f6d3d0;
+  --error-5-color: #fdf6f5;
+
+  --black-opacity-8: rgba(0, 0, 0, 0.08);
+  --white-opacity-5: rgba(255, 255, 255, 0.05);
+  --primary-opacity-25: rgba(110, 128, 248, 0.25);
+}
