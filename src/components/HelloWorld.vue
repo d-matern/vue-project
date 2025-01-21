@@ -1,13 +1,10 @@
 <script setup lang="ts">
-import IconWhatsApp from './icons/IconWhatsApp.vue'
-import LinkSocial from './ui/LinkSocial.vue'
+import { ref } from 'vue';
+import UiRating from './ui/UiRating.vue';
+
+const r = ref(3);
 </script>
 
 <template>
-  <LinkSocial href="" variant="mobile">
-    <template #icon>
-      <IconWhatsApp />
-    </template>
-    WhatsApp
-  </LinkSocial>
+  <UiRating v-model:rating="r" />
 </template>
