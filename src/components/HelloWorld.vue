@@ -1,7 +1,13 @@
 <script setup lang="ts">
-import ButtonPrimary from './ui/ButtonPrimary.vue'
+import IconWhatsApp from './icons/IconWhatsApp.vue'
+import LinkSocial from './ui/LinkSocial.vue'
 </script>
 
 <template>
-  <ButtonPrimary variant="attention"> Label </ButtonPrimary>
+  <LinkSocial href="" variant="mobile">
+    <template #icon>
+      <IconWhatsApp />
+    </template>
+    WhatsApp
+  </LinkSocial>
 </template>
