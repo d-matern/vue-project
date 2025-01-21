@@ -1,10 +1,7 @@
 <script setup lang="ts">
-import IconCopy from './icons/IconCopy.vue'
-import ButtonIcon from './ui/ButtonIcon.vue'
+import ButtonPrimary from './ui/ButtonPrimary.vue'
 </script>
 
 <template>
-  <ButtonIcon size="m">
-    <IconCopy />
-  </ButtonIcon>
+  <ButtonPrimary variant="attention"> Label </ButtonPrimary>
 </template>

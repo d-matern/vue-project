@@ -8,6 +8,11 @@
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   transition: all 0.3s;
+  border: none;
+}
+
+*:disabled {
+  pointer-events: none;
 }
 
 body {
@@ -16,4 +21,8 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  cursor: pointer;
 }

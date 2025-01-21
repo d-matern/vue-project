@@ -2,7 +2,7 @@
 withDefaults(
   defineProps<{
     size?: 'xs' | 's' | 'm'
-    variant?: 'primary' | 'inverted' | 'conservative'
+    variant?: 'primary' | 'invert' | 'conservative'
     isDisabled?: boolean
   }>(),
   {
@@ -29,11 +29,6 @@ withDefaults(
   align-items: center;
   justify-content: center;
   background: transparent;
-  border: none;
-  cursor: pointer;
-}
-.button:disabled {
-  pointer-events: none;
 }
 
 .button-size-xs {
@@ -67,16 +62,16 @@ withDefaults(
   background: var(--primary-opacity-25);
 }
 
-.button-variant-inverted {
+.button-variant-invert {
   color: var(--white-color);
 }
-.button-variant-inverted:hover {
+.button-variant-invert:hover {
   background: var(--black-opacity-8);
 }
-.button-variant-inverted:disabled {
+.button-variant-invert:disabled {
   color: var(--white-opacity-45);
 }
-.button-variant-inverted:active {
+.button-variant-invert:active {
   background: var(--black-opacity-8);
 }
 
