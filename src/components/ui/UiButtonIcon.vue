@@ -3,11 +3,13 @@ withDefaults(
   defineProps<{
     size?: 'xs' | 's' | 'm';
     variant?: 'primary' | 'invert' | 'conservative';
+    isActive?: boolean;
     isDisabled?: boolean;
   }>(),
   {
     size: 'xs',
     variant: 'primary',
+    isActive: false,
     isDisabled: false,
   },
 );
@@ -16,7 +18,10 @@ withDefaults(
 <template>
   <button
     class="button"
-    :class="`button-size-${size} button-variant-${variant}`"
+    :class="`
+      button-size-${size} button-variant-${variant}
+      ${isActive && !isDisabled ? `button-variant-${variant}--active` : ''}
+    `"
     :disabled="isDisabled"
   >
     <slot />
@@ -32,20 +37,20 @@ withDefaults(
 }
 
 .button-size-xs {
-  width: 20px;
-  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
   border-radius: 6px;
 }
 
 .button-size-s {
-  width: 24px;
-  height: 24px;
+  min-width: 24px;
+  min-height: 24px;
   border-radius: 8px;
 }
 
 .button-size-m {
-  width: 36px;
-  height: 36px;
+  min-width: 36px;
+  min-height: 36px;
   border-radius: 8px;
 }
 
@@ -58,6 +63,7 @@ withDefaults(
 .button-variant-primary:disabled {
   color: var(--primary-75-color);
 }
+.button-variant-primary--active,
 .button-variant-primary:active {
   background: var(--primary-opacity-25);
 }
@@ -71,6 +77,7 @@ withDefaults(
 .button-variant-invert:disabled {
   color: var(--white-opacity-45);
 }
+.button-variant-invert--active,
 .button-variant-invert:active {
   background: var(--black-opacity-8);
 }
@@ -84,6 +91,7 @@ withDefaults(
 .button-variant-conservative:disabled {
   color: var(--black-opacity-35);
 }
+.button-variant-conservative--active,
 .button-variant-conservative:active {
   background: var(--black-opacity-8);
 }

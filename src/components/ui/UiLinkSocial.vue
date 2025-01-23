@@ -12,7 +12,7 @@ withDefaults(
 </script>
 
 <template>
-  <a class="link body-s-500" :href="href" target="_blank">
+  <a class="link body-s-500" :href="href" target="_blank" rel="noopener noreferrer">
     <div class="link-icon" :class="`link-${variant}-icon`">
       <slot name="icon" />
     </div>

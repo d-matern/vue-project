@@ -53,15 +53,15 @@ h4,
   line-height: 40px;
 }
 
-h4,
-.heading-4 {
+h5,
+.heading-5 {
   font-family: 'Hind-Medium';
   font-size: 24px;
   line-height: 32px;
 }
 
-h4,
-.heading-4 {
+h6,
+.heading-6 {
   font-family: 'Hind-Medium';
   font-size: 20px;
   line-height: 28px;
